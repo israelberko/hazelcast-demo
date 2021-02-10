@@ -1,0 +1,64 @@
+2021-02-01 19:09:42.306  INFO [Service #2,,] 485 --- [restartedMain] com.k2.k2service.K2ServiceApplicationKt  : Starting K2ServiceApplicationKt using Java 11.0.9.1 on ISRAELB-LP with PID 485 (/mnt/c/Users/israelb/Developer/kotlin-services/k2-service/target/classes started by israelb in /mnt/c/Users/israelb/Developer/kotlin-services/k2-service)
+2021-02-01 19:09:42.313  INFO [Service #2,,] 485 --- [restartedMain] com.k2.k2service.K2ServiceApplicationKt  : No active profile set, falling back to default profiles: default
+2021-02-01 19:09:42.447  INFO [Service #2,,] 485 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-01 19:09:42.448  INFO [Service #2,,] 485 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-01 19:09:48.844  INFO [Service #2,,] 485 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-02-01 19:09:49.220  INFO [Service #2,,] 485 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 360 ms. Found 3 MongoDB repository interfaces.
+2021-02-01 19:09:52.164  INFO [Service #2,,] 485 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=390a88bc-383c-363b-a922-0d1b6f170817
+2021-02-01 19:09:54.765  INFO [Service #2,,] 485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7000 (http)
+2021-02-01 19:09:54.800  INFO [Service #2,,] 485 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-01 19:09:54.801  INFO [Service #2,,] 485 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-01 19:09:55.043  INFO [Service #2,,] 485 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/k2]     : Initializing Spring embedded WebApplicationContext
+2021-02-01 19:09:55.044  INFO [Service #2,,] 485 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12593 ms
+2021-02-01 19:09:57.027  WARN [Service #2,,] 485 --- [restartedMain] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-02-01 19:09:57.043  INFO [Service #2,,] 485 --- [restartedMain] c.h.i.config.AbstractConfigLocator       : Loading 'hazelcast.yaml' from the classpath.
+2021-02-01 19:09:57.559  INFO [Service #2,,] 485 --- [restartedMain] com.hazelcast.system                     : [192.168.32.201]:5701 [dev] [4.1.1] Hazelcast 4.1.1 (20201222 - 27af558) starting at [192.168.32.201]:5701
+2021-02-01 19:09:59.216  INFO [Service #2,,] 485 --- [restartedMain] com.hazelcast.instance.impl.Node         : [192.168.32.201]:5701 [dev] [4.1.1] Using Multicast discovery
+2021-02-01 19:09:59.230  WARN [Service #2,,] 485 --- [restartedMain] com.hazelcast.cp.CPSubsystem             : [192.168.32.201]:5701 [dev] [4.1.1] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2021-02-01 19:10:00.242  INFO [Service #2,,] 485 --- [restartedMain] c.h.internal.diagnostics.Diagnostics     : [192.168.32.201]:5701 [dev] [4.1.1] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-02-01 19:10:00.292  INFO [Service #2,,] 485 --- [restartedMain] com.hazelcast.core.LifecycleService      : [192.168.32.201]:5701 [dev] [4.1.1] [192.168.32.201]:5701 is STARTING
+2021-02-01 19:10:02.651  INFO [Service #2,,] 485 --- [restartedMain] c.h.internal.cluster.ClusterService      : [192.168.32.201]:5701 [dev] [4.1.1] 
+
+Members {size:1, ver:1} [
+	Member [192.168.32.201]:5701 - ec938334-30ae-4ac8-9b40-827a20bcb698 this
+]
+
+2021-02-01 19:10:02.687  INFO [Service #2,,] 485 --- [restartedMain] com.hazelcast.core.LifecycleService      : [192.168.32.201]:5701 [dev] [4.1.1] [192.168.32.201]:5701 is STARTED
+2021-02-01 19:10:03.254  INFO [Service #2,,] 485 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-02-01 19:10:03.400  INFO [Service #2,,] 485 --- [cluster-ClusterId{value='601835eb0e3fab2a23328d34', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongodb-driver-core-4.1.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143) ~[mongodb-driver-core-4.1.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188) ~[mongodb-driver-core-4.1.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144) ~[mongodb-driver-core-4.1.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:609) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:78) ~[mongodb-driver-core-4.1.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongodb-driver-core-4.1.1.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.1.1.jar:na]
+	... 4 common frames omitted
+
+2021-02-01 19:10:06.611  INFO [Service #2,,] 485 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-02-01 19:10:07.432  INFO [Service #2,,] 485 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-01 19:10:11.820  INFO [Service #2,,] 485 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a4e6d15, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc7cc53, org.springframework.security.web.header.HeaderWriterFilter@59bf224e, org.springframework.security.web.csrf.CsrfFilter@43227886, org.springframework.security.web.authentication.logout.LogoutFilter@317ec44a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25fae683, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ba2d59f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54b52bda, org.springframework.security.web.session.SessionManagementFilter@51601f46, org.springframework.security.web.access.ExceptionTranslationFilter@102ced79]
+2021-02-01 19:10:12.463  INFO [Service #2,,] 485 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-01 19:10:13.329  WARN [Service #2,,] 485 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-02-01 19:10:14.171  INFO [Service #2,,] 485 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-02-01 19:10:17.140  INFO [Service #2,,] 485 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-02-01 19:10:17.366  INFO [Service #2,,] 485 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-02-01 19:10:17.487  INFO [Service #2,,] 485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7000 (http) with context path '/k2'
+2021-02-01 19:10:18.490  INFO [Service #2,,] 485 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-02-01 19:10:19.492  INFO [Service #2,,] 485 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-02-01 19:10:19.517  INFO [Service #2,,] 485 --- [restartedMain] com.k2.k2service.K2ServiceApplicationKt  : Started K2ServiceApplicationKt in 39.983 seconds (JVM running for 41.251)
+2021-02-01 19:10:19.863  WARN [Service #2,,] 485 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=Service #2, managementUrl=http://localhost:7001/k2/actuator, healthUrl=http://localhost:7001/k2/actuator/health, serviceUrl=http://localhost:7001/k2) at spring-boot-admin ([http://localhost:8080/instances]): I/O error on POST request for "http://localhost:8080/instances": Connect to localhost:8080 [localhost/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1] failed: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2021-02-01 19:12:20.633  INFO [Service #2,,] 485 --- [hz.ShutdownThread] com.hazelcast.instance.impl.Node         : [192.168.32.201]:5701 [dev] [4.1.1] Running shutdown hook... Current state: ACTIVE
+2021-02-01 19:12:21.247  INFO [Service #2,,] 485 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2021-02-01 19:12:21.355  INFO [Service #2,,] 485 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

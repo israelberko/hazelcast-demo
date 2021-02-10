@@ -1,0 +1,19 @@
+version: '2'
+services:
+  khipster-app:
+    image: khipster
+  khipster-mongodb:
+    extends:
+      file: mongodb.yml
+      service: khipster-mongodb
+  kafka:
+    extends:
+      file: kafka.yml
+      service: kafka
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=kafka
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+  zookeeper:
+    extends:
+      file: kafka.yml
+      service: zookeeper

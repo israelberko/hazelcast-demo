@@ -1,0 +1,73 @@
+#hazelcast:
+#  cluster-name: dev
+#  management-center:
+#    enabled: true
+#    url: 'http://localhost:8090'
+#  network:
+#    port:
+#      port: 5701
+#    join:
+#      multicast:
+#        enabled: false
+#      tcp-ip:
+#        enabled: true
+#        member-list:
+#          - 192.168.32.193:5701
+#          - 192.168.32.193:5702
+#-Dgroup.name=hz-compose -Dgroup.password=s3crEt
+
+#hazelcast:
+#  cluster-name: dev
+#  management-center:
+#    enabled: true
+#    url: 'http://mancenter:8090/mancenter'
+#  network:
+#    cluster-members:
+#      - 192.168.32.193
+#    public-address: 192.168.32.193
+#    join:
+#      tcp-ip:
+#        enabled: true
+#        member-list:
+#          - 192.168.32.193:5701
+#      multicast:
+#        enabled: false
+
+#hazelcast:
+#  security:
+#    enabled: false
+#  cluster-name: dev
+#  management-center:
+#    enabled: true
+#    url: 'http://192.168.32.193:8090/dev'
+##    url: 'http://localhost:8090/'
+#  network:
+#    public-address: 192.168.32.193
+#    port:
+#      port: 9701
+#    join:
+#      auto-detection:
+#        enabled: true
+
+#      multicast:
+#        enabled: false
+#        multicast-group: 224.2.2.3
+#        multicast-port: 54327
+#      tcp-ip:
+#        enabled: false
+#        member-list:
+#          - 192.168.32.193:9701
+#          - 192.168.32.193:5701
+
+
+hazelcast:
+#  security:
+#    enabled: false
+  cluster-name: dev
+  management-center:
+    enabled: true
+    url: 'http://192.168.132.112:8090/dev'
+  network:
+    public-address: 192.168.132.112
+#    port:
+#      port: 9701
